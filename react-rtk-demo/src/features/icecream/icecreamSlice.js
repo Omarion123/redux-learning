@@ -21,7 +21,7 @@ const icecreamSlice = createSlice({
   //   },
   extraReducers: (builder) => {
     //this will make each time we sell cake we will also give extra one icecream for customer
-    builder.addCase(cakeOrdered.ordered, (state) => {
+    builder.addCase(cakeOrdered, (state) => {
       state.numOfIcecreams--;
     });
   },
